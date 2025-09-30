@@ -126,6 +126,7 @@ footer {
 	margin-top: 1em;
 }
 
+/* These are the sytles for the social links in the footer */
 .social-links {
   display: flex;
   gap: 16px; 
@@ -147,6 +148,7 @@ footer {
   height: 24px;
 }
 
+/* These are the styles for the hgroup titles */
 hgroup {
   text-align: left;
   padding-left: 16px;
@@ -167,6 +169,7 @@ hgroup p {
   font-weight: bold;
 }
 
+/* These are the styles for the <a> for the papers so they look like buttons */
 .button {
   display: block;
   padding: 10px 20px;
@@ -187,6 +190,7 @@ hgroup p {
   background-color: #0056b3;
 }
 
+/* These are the syles so that the books refrences are in a 2x# grid */
 .book-grid {
   display: grid;
   grid-template-columns: 1fr 1fr; 
@@ -214,6 +218,7 @@ hgroup p {
   border-left: 1em solid #2774ad;
 }
 
+/* These are the styles for makeing it so img/video/content can be side by side with text */
 .flex-section {
   display: flex;
   align-items: flex-start; 
@@ -235,6 +240,7 @@ hgroup p {
   align-self: center; 
 }
 
+/* This is to revesre the order of the text and content */
 .flex-section-reverse {
   display: flex;
   align-items: flex-start; 
