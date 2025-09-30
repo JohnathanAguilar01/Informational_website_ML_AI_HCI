@@ -153,9 +153,9 @@ hgroup {
   border-left: 10px solid #2774ad;
   margin-top: 2rem;
   margin-bottom: 1rem;
-	border-bottom: 1px solid gray;
-	border-top: 1px solid gray;
-	border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+  border-right: 1px solid gray;
 }
 
 hgroup h3 {
@@ -211,7 +211,7 @@ hgroup p {
 .img-80 {
   width: 80%;
   height: auto;
-	border-left: 1em solid #2774ad;
+  border-left: 1em solid #2774ad;
 }
 
 .flex-section {
