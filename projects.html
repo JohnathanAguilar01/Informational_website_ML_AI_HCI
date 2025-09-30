@@ -20,13 +20,6 @@
 </header>
 <main role="main">
   <article>
-    <!--
-    <video autoplay loop muted playsinline poster="images/thumbnail.jpg" width="640">
-      <source src="images/thumbnail.mp4" type="video/mp4">
-      <source src="images/thumbnail.webm" type="video/webm">
-      Your browser does not support the video tag.
-    </video>
-    -->
     <section>
       <p>
         The convergence of Human-Computer Interaction (HCI) and Artificial Intelligence (AI) is shaping the future of human-technology
@@ -41,53 +34,247 @@
 
     <section>
       <h3>Watch Your Mouth: Silent Speech Recognition with Depth Sensing</h3>
-      <p>Decodes silent speech (lip movements) using depth sensing for hands-free input.</p>
-      <a href="https://hilab.dev/research/WatchYourMouth/WatchYourMouth.pdf">Paper</a>
+      <h4>Abstract</h4>
+      <p>
+        Silent speech recognition is a promising technology that decodes
+        human speech without requiring audio signals, enabling private
+        human-computer interactions. In this paper, we propose Watch
+        Your Mouth, a novel method that leverages depth sensing to enable
+        accurate silent speech recognition. By leveraging depth information,
+        our method provides unique resilience against environmental
+        factors such as variations in lighting and device orientations, while
+        further addressing privacy concerns by eliminating the need for
+        sensitive RGB data. We started by building a deep-learning model
+        that locates lips using depth data. We then designed a deep learning
+        pipeline to effciently learn from point clouds and translate
+        lip movements into commands and sentences. We evaluated our
+        technique and found it effective across diverse sensor locations:
+        On-Head, On-Wrist, and In-Environment. Watch Your Mouth out-
+        performed the state-of-the-art RGB-based method, demonstrating
+        its potential as an accurate and reliable input technique.
+      <p>
+      <a  href="https://hilab.dev/research/WatchYourMouth/WatchYourMouth.pdf">Paper</a>
+      <video autoplay loop muted playsinline width="640">
+        <source src="images/speach_thumbnail.webm" type="video/webm">
+        your browser does not support the video.
+      </video>
     </section>
     <section>
       <h3>WheelPose</h3>
-      <p>Synthetic data pipeline to improve pose estimation for wheelchair users.</p>
+      <h4>Abstract</h4>
+      <p>
+        Existing pose estimation models perform poorly on wheelchair
+        users due to a lack of representation in training data. We present
+        a data synthesis pipeline to address this disparity in data collection
+        and subsequently improve pose estimation performance for
+        wheelchair users. Our confgurable pipeline generates synthetic
+        data of wheelchair users using motion capture data and motion
+        generation outputs simulated in the Unity game engine. We validated
+        our pipeline by conducting a human evaluation, investigating
+        perceived realism, diversity, and an AI performance evaluation on
+        a set of synthetic datasets from our pipeline that synthesized differnt
+        backgrounds, models, and postures. We found our generated
+        datasets were perceived as realistic by human evaluators, had more
+        diversity than existing image datasets, and had improved person
+      </p>
       <a href="https://hilab.dev/research/WheelPose/WheelPose.pdf">Paper</a>
+      <video autoplay loop muted playsinline width="640">
+        <source src="images/wheelpose_thumbnail.webm" type="video/webm">
+        your browser does not support the video.
+      </video>
     </section>
     <section>
       <h3>FingerSwitches: UI Mobility Control in XR</h3>
-      <p>Technique to switch XR UI attachments among world, objects, and self.</p>
+      <h4>Abstract</h4>
+      <p>
+        Extended reality (XR) has the potential for seamless user interface
+        (UI) transitions across people, objects, and environments. However,
+        the design space, applications, and common practices of 3D UI transitions
+        remain underexplored. To address this gap, we conducted
+        a need-finding study with 11 participants, identifying and distilling a
+        taxonomy based on three types of UI placements — affixed
+        to static, dynamic, or self entities. We further surveyed 113 commercial
+        applications to understand the common practices of 3D
+        UI mobility control, where only 6.2% of these applications allowed
+        users to transition UI between entities. In response, we built 
+        interaction prototypes to facilitate UI transitions between entities.
+        We report on results from a qualitative user study (N=14) on 3D
+        UI mobility control using our FingerSwitches technique, which
+        suggests that perceived usefulness is affected by types of entities
+        and environments. We aspire to tackle a vital need in UI mobility
+        within XR.
+      </p>
       <a href="https://hilab.dev/research/FingerSwitches/FingerSwitches.pdf">Paper</a>
+      <video autoplay loop muted playsinline width="640">
+        <source src="images/finger_thumbnail.webm" type="video/webm">
+        your browser does not support the video.
+      </video>
     </section>
     <section>
       <h3>Embodied Exploration: Remote Accessibility Assessment in VR</h3>
-      <p>VR method for wheelchair users to assess physical spaces remotely.</p>
+      <h4>Abstract</h4>
+      <p>        
+        Acquiring accessibility information about unfamiliar places in advance
+        is essential for wheelchair users to make better decisions
+        about physical visits. Today’s assessment approaches such as phone
+        calls, photos/videos, or 360◦ virtual tours often fall short of
+        providing the specific accessibility details needed for individual differences.
+        For example, they may not reveal crucial information like
+        whether the legroom underneath a table is spacious enough or if the
+        spatial configuration of an appliance is convenient for wheelchair
+        users. In response, we present Embodied Exploration, a Virtual Reality
+        (VR) technique to deliver the experience of a physical visit
+        while keeping the convenience of remote assessment. Embodied
+        Exploration allows wheelchair users to explore high-fidelity digital
+        replicas of physical environments with themselves embodied by
+        avatars, leveraging the increasingly affordable VR headsets. With
+        a preliminary exploratory study, we investigated the needs and
+        iteratively refined our techniques. Through a real-world user study
+        with six wheelchair users, we found Embodied Exploration is able
+        to facilitate remote and accurate accessibility assessment. We also
+        discuss design implications for embodiment, safety, and practicality.
+      </p>
       <a href="https://hilab.dev/research/EmbodiedExploration/EmbodiedExploration.pdf">Paper</a>
+      <video autoplay loop muted playsinline width="640">
+        <source src="images/embodied_thumbnail.webm" type="video/webm">
+        your browser does not support the video.
+      </video>
     </section>
     <section>
       <h3>TextureSight</h3>
-      <p>Smart ring using laser speckle imaging to identify object textures and activities.</p>
+      <h4>Abstract:</h4>
+      <p>        
+        Objects engaged by users’ hands contain rich contextual information for their strong correlation with user activities. Tools
+        such as toothbrushes and wipes indicate cleansing and sanitation, while mice and keyboards imply work. Much research
+        has been endeavored to sense hand-engaged objects to supply wearables with implicit interactions or ambient computing
+        with personal informatics. We propose TextureSight, a smart-ring sensor that detects hand-engaged objects by detecting
+        their distinctive surface textures using laser speckle imaging on a ring form factor. We conducted a two-day experience
+        sampling study to investigate the unicity and repeatability of the object-texture combinations across routine objects. We
+        grounded our sensing with a theoretical model and simulations, powered it with state-of-the-art deep neural net techniques,
+        and evaluated it with a user study. TextureSight constitutes a valuable addition to the literature for its capability to sense
+        passive objects without emission of EMI or vibration and its elimination of lens for preserving user privacy, leading to a new,
+        practical method for activity recognition and context-aware computing.
+      </p>
       <a href="https://hilab.dev/research/TextureSight/TextureSight.pdf">Paper</a>
+      <video autoplay loop muted playsinline width="640">
+        <source src="images/texture_thumbnail.webm" type="video/webm">
+        your browser does not support the video.
+      </video>
     </section>
     <section>
       <h3>T2IRay: Thumb-to-Index Indirect Pointing</h3>
-      <p>3D pointing technique combining thumb motion and hand pose.</p>
+      <h4>Abstract:</h4>
+      <p>
+        Free-hand interactions have been widely deployed for AR/VR interfaces
+        to promote a natural and seamless interaction experience.
+        Among various types of hand interactions, microgestures are still
+        limited in supporting discrete inputs and in lacking a continuous
+        interaction theme. To this end, we propose a new pointing 
+        technique, T2IRay, which enables continuous indirect pointing through
+        microgestures for continuous spatial input. We employ our own
+        local coordinate system based on the thumb-to-index finger 
+        relationship to map the computed raycasting direction for indirect
+        pointing in a virtual environment. Furthermore, we examine 
+        various mapping methodologies and collect thumb-click behaviors to
+        formulate thumb-to-index microgesture design guidelines to foster
+        continuous, reliable input. We evaluate the design parameters for
+        mapping indirect pointing with acceptable speed, depth, and range.
+        We collect and analyze the characteristics of click behaviors for 
+        future implementation. Our research demonstrates the potential and
+        practicality of free-hand micro-finger input methods for advancing
+        future interaction paradigms.
+      </p>
       <a href="https://hilab.dev/research/T2IRay/T2IRay.pdf">Paper</a>
+      <video autoplay loop muted playsinline width="640">
+        <source src="images/thumb_thumbnail.mp4" type="video/mp4">
+        your browser does not support the video.
+      </video>
     </section>
     <section>
       <h3>Headar</h3>
-      <p>mmWave-based recognition of head gestures for smartwatch confirmation dialogs.</p>
+      <h4>Abstract:</h4>
+      <p>
+        Nod and shake of one’s head are intuitive and universal gestures in communication. As smartwatches become increasingly
+        intelligent through advances in user activity sensing technologies, many use scenarios of smartwatches demand quick
+        responses from users in confirmation dialogs, to accept or dismiss proposed actions. Such proposed actions include making
+        emergency calls, taking service recommendations, and starting or stopping exercise timers. Head gestures in these scenarios
+        could be preferable to touch interactions for being hands-free and easy to perform. We propose Headar to recognize these
+        gestures on smartwatches using wearable millimeter wave sensing. We first surveyed head gestures to understand how
+        they are performed in conversational settings. We then investigated positions and orientations to which users raise their
+        smartwatches. Insights from these studies guided the implementation of Headar. Additionally, we conducted modeling and
+        simulation to verify our sensing principle. We developed a real-time sensing and inference pipeline using contemporary
+        deep learning techniques, and proved the feasibility of our proposed approach with a user study (n=15) and a live test (n=8).
+        Our evaluation yielded an average accuracy of 84.0% in the user study across 9 classes including nod and shake as well
+        as seven other signals – still, speech, touch interaction, and four non-gestural head motions (i.e., head up, left, right, and
+        down). Furthermore, we obtained an accuracy of 72.6% in the live test which reveals rich insights into the performance of our
+        approach in various realistic conditions. 
+      </p>
       <a href="https://hilab.dev/research/Headar/Headar.pdf">Paper</a>
+      <video autoplay loop muted playsinline width="640">
+        <source src="images/headar_thumbnail.webm" type="video/webm">
+        your browser does not support the video.
+      </video>
     </section>
     <section>
       <h3>CubeSense++ (Smart Environment Sensing)</h3>
-      <p>Low-power smart environment sensing for activity and context detection.</p>
+      <h4>Abstract:</h4>
+      <p>        
+        Smart environment sensing provides valuable contextual 
+        information by detecting occurrences of events such as human activities
+        and changes of object status, enabling computers to collect
+        personal and environmental informatics to perform timely responses
+        to user’s needs. Conventional approaches either rely on tags that 
+        require batteries and frequent maintenance, or have limited detection
+        capabilities bounded by only a few coarsely predefined activities.
+        In response, this paper explores corner reflector mechanisms that
+        encode user interactions with everyday objects into structured
+        responses to millimeter wave radar, which has the potential for
+        integration into smart environment entities such as speakers, light
+        bulbs, thermostats, and autonomous vehicles. We presented the
+        design space of 3D printed reflectors and gear mechanisms, which
+        are low-cost, durable, battery-free, and can retrofit to a wide array
+        of objects. These mechanisms convert the kinetic energy from user
+        interactions into rotational motions of corner reflectors which we
+        computationally designed with a genetic algorithm. We built an
+        end-to-end radar detection pipeline to recognize fine-grained activity
+        information such as state, direction, rate, count, and usage
+        based on the characteristics of radar responses. We conducted studies
+        for multiple instrumented objects in both indoor and outdoor
+        environments, with promising results demonstrating the feasibility
+        of the proposed approach.
+      </p>
       <a href="https://hilab.dev/research/CubeSensePlusPlus/CubeSensePlusPlus.pdf">Paper</a>
-    </section>
-    <section>
-      <h3>Wall++</h3>
-      <p>Turns walls into touch/gesture sensing infrastructure via capacitive/EM methods.</p>
-      <a href="https://hilab.dev/research/Wall/Wall.pdf">Paper</a>
+      <video autoplay loop muted playsinline width="640">
+        <source src="images/cube_thumbnail.webm" type="video/webm">
+        your browser does not support the video.
+      </video>
     </section>
     <section>
       <h3>Interaction Harvesting / Interaction-Powered Widgets</h3>
-      <p>Harvests energy from user interactions to power and sense device actions.</p>
+      <h4>Abstract:</h4>
+      <p>
+        Whenever a user interacts with a device, mechanical work is performed to actuate the user interface elements; the resulting
+        energy is typically wasted, dissipated as sound and heat. Previous work has shown that many devices can be powered entirely
+        from this otherwise wasted user interface energy. For these devices, wires and batteries, along with the related hassles of
+        replacement and charging, become unnecessary and onerous. So far, these works have been restricted to proof-of-concept
+        demonstrations; a specific bespoke harvesting and sensing circuit is constructed for the application at hand. The challenge of
+        harvesting energy while simultaneously sensing fine-grained input signals from diverse modalities makes prototyping new
+        devices difficult. To fill this gap, we present a hardware toolkit which provides a common electrical interface for harvesting
+        energy from user interface elements. This facilitates exploring the composability, utility, and breadth of enabled applications
+        of interaction-powered smart devices. We design a set of "energy as input" harvesting circuits, a standard connective interface
+        with 3D printed enclosures, and software libraries to enable the exploration of devices where the user action generates the
+        energy needed to perform the device’s primary function. This exploration culminated in a demonstration campaign where we
+        prototype several exemplar popular toys and gadgets, including battery-free Bop-It— a popular 90s rhythm game, an electronic
+        Etch-a-sketch, a "Simon-Says"-style memory game, and a service rating device. We run exploratory user studies to understand
+        how generativity, creativity, and composability are hampered or facilitated by these devices. These demonstrations, user study
+        takeaways, and the toolkit itself provide a foundation for building interactive and user-focused gadgets whose usability is not
+        affected by battery charge and whose service lifetime is not limited by battery wear.
+      </p>
       <a href="https://hilab.dev/research/InteractionHarvesting/InteractionHarvesting.pdf">Paper</a>
+      <video autoplay loop muted playsinline width="640">
+        <source src="images/simon_thumbnail.webm" type="video/webm">
+        your browser does not support the video.
+      </video>
     </section>
   </article>
 </main>
