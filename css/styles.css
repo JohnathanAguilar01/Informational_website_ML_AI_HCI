@@ -72,6 +72,7 @@ nav li {
 nav a {
   font-size: 150%;
   align-self: center;
+  text-decoration: none;
 }
 
 section {
@@ -171,6 +172,7 @@ hgroup p {
   padding: 10px 20px;
   background-color: #2774ad;
   color: white;
+  text-decoration: none;
   border: none;
   border-radius: 6px;
   cursor: pointer;
