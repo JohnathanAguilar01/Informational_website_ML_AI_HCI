@@ -1,4 +1,9 @@
-html, body {
+html {
+	background: #2774ad;
+	margin: 0;
+	filter: blur(5px); 
+}
+body {
 	background: #2774ad;
 	margin: 0;
 }
