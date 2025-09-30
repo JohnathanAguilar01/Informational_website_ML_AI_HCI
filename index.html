@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>Information website on ML + AI with regards to HCI</title>
 <link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
 <header role="banner">
@@ -29,14 +30,19 @@
     </header>
     <section>
       <h3>What is HCI + AI?</h3>
-      <p>
-        Human-computer interaction (HCI) is a multidisciplinary field of study that focuses on the design of computer technology, particularly the interaction between humans (users) and computers.
-        When incorporating Artificial Intelligence into the mix, you enter the domain of Human-Centered AI (HCAI), which involves the study of designing, developing, evaluating, and deploying AI-driven
-        technologies to augment and empower human capabilities, leading to interactive systems that combine artificial intelligence with human users. This interdisciplinary field combines principles from
-        computer science, behavioral sciences, and design to create intelligent, user-friendly, and trustworthy AI systems that augment human capabilities, support decision-making, and improve user experiences.
-      </p>
-          <img class="flowRight" src="images/HCAI.png" alt="HCAI image" width="300">
+      <div class="flex-section">
+        <div class="flex-text">
+          <p>
+            Human-computer interaction (HCI) is a multidisciplinary field of study that focuses on the design of computer technology, particularly the interaction between humans (users) and computers.
+            When incorporating Artificial Intelligence into the mix, you enter the domain of Human-Centered AI (HCAI), which involves the study of designing, developing, evaluating, and deploying AI-driven
+            technologies to augment and empower human capabilities, leading to interactive systems that combine artificial intelligence with human users. This interdisciplinary field combines principles from
+            computer science, behavioral sciences, and design to create intelligent, user-friendly, and trustworthy AI systems that augment human capabilities, support decision-making, and improve user experiences.
+          </p>
+        </div>
+        <img class="flex-content" src="images/HCAI.png" alt="HCAI image" width="300">
+      </div>
     </section>
+
     <section>
       <h3>Why is HCI + AI so Important?</h3>
       <p>
@@ -46,39 +52,40 @@
         in areas like healthcare, education, and creative work, using HCI principles helps keep these systems ethical, inclusive, and focused on human needs. This leads to technology that is more useful, empowering,
         and widely accepted.
       </p>
-<section>
-  <h3>Example: How Using Chat GPT In Code VS AS A Human.</h3>
-  <p>
-    An example that most can probably relate to is how we interact with ChatGPT. As humans, it is more intuitive for us to interact with this LLM through a chat box, where responses are displayed, as shown in the image below.
-  </p>
-  <img src="images/chat_gpt.png" alt="chat gpt ui example" width="1075">
+    </section>
+    <section>
+      <h3>Example: How Using Chat GPT In Code VS AS A Human.</h3>
+      <p>
+        An example that most can probably relate to is how we interact with ChatGPT. As humans, it is more intuitive for us to interact with this LLM through a chat box, where responses are displayed, as shown in the image below.
+      </p>
+      <img class="img-80" src="images/chat_gpt.png" alt="chat gpt ui example">
 
-  <p>
-    This interface would be considered part of the HCI aspect of the AI. Alternatively, one can interact with ChatGPT through code, as shown in the Python code below. This is far less intuitive and does not take human interaction into consideration when using this LLM.
-  <pre><code class="language-python">
-# 1. Install the official OpenAI package if you haven't already:
-# pip install openai
-
-from openai import OpenAI
-
-# 2. Create a client with your API key
-# (make sure to set the environment variable OPENAI_API_KEY first)
-client = OpenAI()
-
-# 3. Send a chat completion request
-response = client.chat.completions.create(
-    model="gpt-4o-mini",  # You can use gpt-4, gpt-4o, or gpt-3.5-turbo
-    messages=[
-        {"role": "system", "content": "You are a helpful assistant."},
-        {"role": "user", "content": "Write a short poem about AI and humans working together."}
-    ]
-)
-
-# 4. Print the model's reply
-print("ChatGPT says:")
-print(response.choices[0].message.content)
-  </code></pre>
-</section>
+      <p>
+        This interface would be considered part of the HCI aspect of the AI. Alternatively, one can interact with ChatGPT through code, as shown in the Python code below. This is far less intuitive and does not take human interaction into consideration when using this LLM.
+      </p>
+      <pre><code class="language-python">
+      # 1. Install the official OpenAI package:
+      # pip install openai
+      
+      from openai import OpenAI
+      
+      # 2. Create a client with your API key
+      # (make sure to set the environment variable OPENAI_API_KEY first)
+      client = OpenAI()
+      
+      # 3. Send a chat completion request
+      response = client.chat.completions.create(
+          model="gpt-4o-mini",  # You can use gpt-4, gpt-4o, or gpt-3.5-turbo
+          messages=[
+              {"role": "system", "content": "You are a helpful assistant."},
+              {"role": "user", "content": "Write a short poem about AI and humans working together."}
+          ]
+      )
+      
+      # 4. Print the model's reply
+      print("ChatGPT says:")
+      print(response.choices[0].message.content)
+      </code></pre>
     </section>
     <section>
       <h3>Research &amp; Application Domains</h3>
